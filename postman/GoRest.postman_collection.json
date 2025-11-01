@@ -1,0 +1,245 @@
+{
+	"info": {
+		"_postman_id": "abcd1f45-0358-4ad8-96bd-c7d792912875",
+		"name": "GoRest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14468109"
+	},
+	"item": [
+		{
+			"name": "ConsultarUser",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "880c674e64570d050fe9934f6709044d688dbe6ff57ff37799469eb7b8655b67",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://gorest.co.in/public/v2/users/7526993",
+					"host": [
+						"https://gorest.co.in"
+					],
+					"path": [
+						"public",
+						"v2",
+						"users",
+						"7526993"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AtualizarUser",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "Authorization",
+							"value": "Bearer {{token}}",
+							"type": "text"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 7526993,\r\n    \"name\": \"Jorge Oliveira\",\r\n    \"email\": \"jorge@qa.com.br\",\r\n    \"gender\": \"male\",\r\n    \"status\": \"active\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://gorest.co.in/public/v2/users/7526993",
+					"host": [
+						"https://gorest.co.in"
+					],
+					"path": [
+						"public",
+						"v2",
+						"users",
+						"7526993"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ConsultarIdUser",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "880c674e64570d050fe9934f6709044d688dbe6ff57ff37799469eb7b8655b67",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://gorest.co.in/public/v2/users/7526993",
+					"host": [
+						"https://gorest.co.in"
+					],
+					"path": [
+						"public",
+						"v2",
+						"users",
+						"7526993"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ConsultarIdUserErrado",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "880c674e64570d050fe9934f6709044d688dbe6ff57ff37799469eb7b8655b67",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://gorest.co.in/public/v2/users/7526993a",
+					"host": [
+						"https://gorest.co.in"
+					],
+					"path": [
+						"public",
+						"v2",
+						"users",
+						"7526993a"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CriarUser",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "880c674e64570d050fe9934f6709044d688dbe6ff57ff37799469eb7b8655b67",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Francisco Rodrigues\",\r\n    \"email\": \"francisco@teste.com\",\r\n    \"gender\": \"male\",\r\n    \"status\": \"active\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://gorest.co.in/public/v2/users",
+					"host": [
+						"https://gorest.co.in"
+					],
+					"path": [
+						"public",
+						"v2",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CriarUserDuplicado",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "880c674e64570d050fe9934f6709044d688dbe6ff57ff37799469eb7b8655b67",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Francisco Rodrigues\",\r\n    \"email\": \"francisco@teste.com\",\r\n    \"gender\": \"male\",\r\n    \"status\": \"active\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://gorest.co.in/public/v2/users",
+					"host": [
+						"https://gorest.co.in"
+					],
+					"path": [
+						"public",
+						"v2",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeletarUser",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "880c674e64570d050fe9934f6709044d688dbe6ff57ff37799469eb7b8655b67",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://gorest.co.in/public/v2/users/7526993",
+					"host": [
+						"https://gorest.co.in"
+					],
+					"path": [
+						"public",
+						"v2",
+						"users",
+						"7526993"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
