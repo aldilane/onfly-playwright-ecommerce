@@ -13,9 +13,9 @@
 					"type": "bearer",
 					"bearer": [
 						{
-							"key": "token",
-							"value": "880c674e64570d050fe9934f6709044d688dbe6ff57ff37799469eb7b8655b67",
-							"type": "string"
+							"key": "Authorization",
+							"value": "Bearer {{token}}",
+							"type": "text"
 						}
 					]
 				},
