@@ -23,7 +23,7 @@ Antes de executar o projeto, verifique se você possui:
 1. **Clone o repositório**  
 
    ```bash
-   git clone https://github.com/seuusuario/onfly-playwright-ecommerce.git
+   git clone https://github.com/aldilane/onfly-playwright-ecommerce.git
    cd onfly-playwright-ecommerce
 
 2. **Dependências recomendadas**  
