@@ -1,0 +1,58 @@
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Credenciais e ambientes (Postman)
+postman/*Environment.json
+*.env
+.env.*
+
+# Relatórios e saídas de testes
+report/        # singular, que é o que o Playwright gera
+reports/
+test-results/
+playwright-report/
+allure-results/
+*.html
+*.json
+
+
+# Arquivos temporários / cache
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+.cache/
+temp/
+tmp/
+*.log
+
+# Logs do sistema e do Playwright
+trace.zip
+playwright/.cache/
+
+# Vídeos e screenshots de testes
+test-results/
+screenshots/
+videos/
+*.mp4
+*.png
+
+# Builds ou artefatos
+dist/
+build/
+coverage/
+*.zip
+*.tar
+*.gz
+
+# Configurações locais de IDEs
+*.swp
+*.swo
+*.code-workspace
+
+# Arquivos gerados automaticamente
+package-lock.json
