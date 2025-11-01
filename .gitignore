@@ -6,12 +6,12 @@ yarn-debug.log*
 yarn-error.log*
 
 # Credenciais e ambientes (Postman)
-postman/*Environment.json
+postman/GoRest.postman_environment.json
 *.env
 .env.*
 
 # Relatórios e saídas de testes
-report/        # singular, que é o que o Playwright gera
+report/        
 reports/
 test-results/
 playwright-report/
